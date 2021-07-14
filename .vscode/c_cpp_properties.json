@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "armv7l",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${HOME}/gcc-linaro/7.3.1-arm-linux-gnueabihf/include/**",
+                "${HOME}/gcc-linaro/7.3.1-arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.3.1/include/**",
+                "${HOME}/gcc-linaro/7.3.1-arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed/**",
+                "${HOME}/gcc-linaro/7.3.1-arm-linux-gnueabihf/arm-linux-gnueabihf/include/c++/**",
+                "${HOME}/gcc-linaro/7.3.1-arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include/**"
+            ],
+            "defines": [
+                "__NEON__",
+                "__arm__=1",
+                "__ARMEL__=1",
+                "__ARM_32BIT_STATE=1",
+                "__ARM_ARCH=7",
+                "__ARM_ARCH_7A__=1",
+                "__ARM_FEATURE_CLZ=1",
+                "__ARM_FEATURE_DSP=1",
+                "__ARM_FEATURE_LDREX=15",
+                "__ARM_FEATURE_QBIT=1",
+                "__ARM_FEATURE_SAT=1",
+                "__ARM_FEATURE_SIMD32=1",
+                "__ARM_FEATURE_UNALIGNED=1",
+                "__ARM_FP=12",
+                "__ARM_NEON=1",
+                "__ARM_NEON_FP=4",
+                "__ARM_NEON__=1"
+            ],
+            "compilerPath": "${HOME}/gcc-linaro/7.3.1-arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
